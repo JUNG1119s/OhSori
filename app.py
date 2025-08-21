@@ -143,8 +143,8 @@ with MainTab:
                 ad_area = st.container()
 
                 # 2) 광고 배너
-                # 파일은 저장소에: OhSori/static/ads/adv.mp4
-                data_url = make_video_data_url("static/ads/adv.mp4")
+                # 파일은 저장소에: OhSori/static/media/adv.mp4
+                data_url = make_video_data_url("static/media/adv.mp4")
 
                 ad_html = render_ad_video(
                     title="실종아동 찾기 · 112 신고",
