@@ -381,7 +381,7 @@ def assign_voices(speakers, language: str):
     # host를 pool에서 제거(중복 배정 방지). 비면 host만이라도 사용
     pool = [v for v in conf.get("pool", []) if v != host_voice] or conf.get("pool", []) or [host_voice]
 
-    host_keywords = {"Host", "진행자", "Alex", "主持人"}
+    host_keywords = {"Host", "진행자", "Alex", "主持人","오소리"}
 
     # 진행자/게스트 분리
     host_speakers = [s for s in speakers if _norm_name(s) in host_keywords]
